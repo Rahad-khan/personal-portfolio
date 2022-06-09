@@ -1,4 +1,6 @@
 import React from 'react';
+import { BsArrowRightShort } from 'react-icons/bs';
+import './HeroArea.css'
 
 const HeroArea = () => {
     return (
@@ -10,7 +12,8 @@ const HeroArea = () => {
                     data-mdb-ripple="true"
                     data-mdb-ripple-color="light"
                     data-mdb-ripple-duration="1000ms"
-                    type="button" class="inline-block px-6 py-3 mt-2 border-2 border-gray-200 text-gray-200 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">View My Work </button>
+                    type="button" class="rotate-btn flex items-center justify-center px-2 py-1 mt-4 border-2 border-gray-200 text-gray-200 font-medium text-sm leading-tight uppercase rounded hover:bg-cyan-500 hover:border-cyan-500 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">View My Work <BsArrowRightShort className='ml-2 w-8 h-8'></BsArrowRightShort>
+                </button>
             </div>
         </div>
     );

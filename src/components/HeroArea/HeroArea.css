@@ -1,0 +1,8 @@
+.rotate-btn:hover svg {
+    transform: rotate(90deg);
+    transition-duration: 500ms;
+}
+
+.rotate-btn svg {
+    transition-duration: 500ms;
+}
