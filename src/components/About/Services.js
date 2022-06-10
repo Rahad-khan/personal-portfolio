@@ -5,7 +5,7 @@ const Services = ({ aim }) => {
     return (
         <div key={aim.id} class="flex justify-center">
             <div class="block rounded-lg max-w-sm text-center">
-                <div class="p-6">
+                <div class="px-6">
                     <div className='flex items-center justify-center mb-2 bg-teal-500  icon-clip p-5 mx-auto'>
                         <aim.icon size={53} className='text-white' />
                     </div>

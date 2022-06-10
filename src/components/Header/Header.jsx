@@ -1,15 +1,39 @@
 import React from 'react';
-
+import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 const Header = () => {
     const navItem = <>
         <li class="nav-item p-2">
-            <a class="nav-link text-white uppercase text-sm hover:text-pink-600 hover:duration-500" href="!#">About</a>
+            <Link
+                className='nav-link text-white uppercase text-sm hover:text-pink-600 hover:duration-500'
+                activeClass="text-pink-600" to="about" spy={true} smooth={true} duration={500} offset={10}
+            >
+                About
+            </Link>
         </li>
         <li class="nav-item p-2">
-            <a class="nav-link text-white uppercase text-sm hover:text-pink-600 hover:duration-500" href="#projects">Portfolio</a>
+            <Link
+                className='nav-link text-white uppercase text-sm hover:text-pink-600 hover:duration-500'
+                activeClass="text-pink-600" to="projects" spy={true} smooth={true} duration={500} offset={10}
+            >
+                Projects
+            </Link>
         </li>
         <li class="nav-item p-2">
-            <a class="nav-link text-white uppercase text-sm hover:text-pink-600 hover:duration-500" href="!#">Contact</a>
+            <Link
+                className='nav-link text-white uppercase text-sm hover:text-pink-600 hover:duration-500'
+                activeClass="text-pink-600" to="blog" spy={true} smooth={true} duration={500} offset={14}
+            >
+                Blog
+            </Link>
+
+        </li>
+        <li class="nav-item p-2">
+            <Link
+                className='nav-link text-white uppercase text-sm hover:text-pink-600 hover:duration-500'
+                activeClass="text-pink-600" to="contact" spy={true} smooth={true} duration={500}
+            >
+                Contact
+            </Link>
         </li>
         <li class="nav-item p-2">
             <a target={`_blank`} class="nav-link text-white uppercase text-sm hover:text-pink-600 hover:duration-500" href="https://drive.google.com/file/d/1Ja4FEE-PMv_0XCf-_BA0deyy63NS0jMX/view?usp=sharing">Resume</a>
@@ -47,7 +71,12 @@ const Header = () => {
                     </svg>
                 </button>
                 <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent1">
-                    <a class="text-3xl text-pink-600 pr-2 font-semibold" href="!#">RK</a>
+                    <Link
+                        className='text-3xl text-pink-600 pr-2 font-semibold'
+                        activeClass="text-pink-600" to="hero" spy={true} smooth={true} duration={500}
+                    >
+                        RK
+                    </Link>
                     {/* <!-- Left links --> */}
                     <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
                         {navItem}

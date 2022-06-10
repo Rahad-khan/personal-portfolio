@@ -4,10 +4,10 @@ import './Contact.css'
 
 const Contact = () => {
     return (
-        <div className='polygon bg-gray-900 mt-10 pb-4'>
+        <div className='polygon bg-gray-900 mt-10 pb-4' id='contact'>
             <h1 className='text-4xl font-bold text-center pt-32 text-white '>Contact</h1>
             <div className='flex items-center justify-center mt-3 mb-10'>
-                <div className='h-[2px] w-20 bg-white'></div>
+                <div className='h-[3px] w-20 bg-white'></div>
             </div>
             <p className='text-center text-cyan-400'>Have any questions or want to work together?</p>
 
