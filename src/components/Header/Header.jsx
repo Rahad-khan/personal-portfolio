@@ -21,7 +21,7 @@ const Header = () => {
         <li class="nav-item p-2">
             <Link
                 className='nav-link text-white uppercase text-sm hover:text-pink-600 hover:duration-500'
-                activeClass="text-pink-600" to="blog" spy={true} smooth={true} duration={500} offset={14}
+                activeClass="text-pink-600" to="blog" spy={true} smooth={true} duration={500} offset={11}
             >
                 Blog
             </Link>

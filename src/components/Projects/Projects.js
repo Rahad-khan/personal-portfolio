@@ -18,7 +18,7 @@ const Projects = () => {
         { id: 6, name: "Panda Shop", img: project6 }
     ]
     return (
-        <div className='bg-slate-50 pt-24 mb-10' id='projects'>
+        <div className='bg-slate-50 pt-24' id='projects'>
             <h1 className='text-3xl font-bold text-center'>PROJECTS</h1>
             <div className='flex items-center justify-center mt-3 mb-10'>
                 <div className='h-[3px] w-16 bg-black'></div>
