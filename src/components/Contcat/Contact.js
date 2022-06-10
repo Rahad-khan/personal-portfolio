@@ -12,10 +12,11 @@ const Contact = () => {
             <p className='text-center text-cyan-400'>Have any questions or want to work together?</p>
 
             <div>
-                <form action="" method="post" className='xl:w-2/6 mx-auto mt-10'>
+                <form action="https://formsubmit.co/e52d73a50c7f12954cf5b60663db347c" method="POST" className='xl:w-2/6 mx-auto mt-10'>
                     <div class="flex justify-center">
                         <div class="mb-1 w-full">
                             <input
+                                name='name'
                                 type="text"
                                 class="
                                 form-control
@@ -41,6 +42,7 @@ const Contact = () => {
                     <div class="flex justify-center">
                         <div class="w-full mb-1">
                             <input
+                                name='email'
                                 type="email"
                                 class="
                                 form-control
@@ -66,6 +68,7 @@ const Contact = () => {
                     <div class="flex justify-center">
                         <div class="mb-1 w-full">
                             <textarea
+                                name='message'
                                 class="
                                 form-control
                                 block
